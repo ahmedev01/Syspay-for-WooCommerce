@@ -8,7 +8,7 @@
  * @class 		ABA_Syspay_Gateway
  * @extends		WC_Payment_Gateway
  * @version		1.0.0
- * @author 		Ahmed Ben Ali, aqazi Studio
+ * @author 		Ahmed Benali
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
@@ -212,11 +212,11 @@ class ABA_Syspay_Gateway extends WC_Payment_Gateway {
     
 	public function syspay_threatmetrics (){
 	  $systhreat = $this->merchant_id.'-'.$_COOKIE['woocommerce_cart_hash'];
-	  echo '<span style="background:url(https://site.syspay.com/fp/clear.png?org_id=l27hgnmv&amp;session_id='.$systhreat.'&amp;m=1)"></span>
-<script src="https://site.syspay.com/fp/check.js?org_id=l27hgnmv&amp;session_id='.$systhreat.'" type="text/javascript"></script>
-<object type="application/x-shockwave-flash" data="https://site.syspay.com/fp/fp.swf?org_id=l27hgnmv&amp;session_id='.$systhreat.'" width="1" height="1" style="position: absolute; left: -999px; top: -999px;"><param name="movie" value="https://site.syspay.com/fp/fp.swf?org_id=l27hgnmv&amp;session_id='.$systhreat.'" /><div></div></object>
-<iframe style="color:rgb(0,0,0); float: left; position: absolute; top: -999px; left: -999px; border: 0px;" src="https://site.syspay.com/tags?org_id=l27hgnmv&amp;session_id='.$systhreat.'" height="100" widht="100"></iframe>
-<img src="https://site.syspay.com/fp/clear.png?org_id=l27hgnmv&amp;session_id='.$systhreat.'&amp;m=2" alt="" style="position: absolute; left: -999px; top: -999px;" />';
+	  echo '<span style="background:url(https://site.syspay.com/fp/clear.png?org_id=xxxxxxxx&amp;session_id='.$systhreat.'&amp;m=1)"></span>
+<script src="https://site.syspay.com/fp/check.js?org_id=xxxxxxxx&amp;session_id='.$systhreat.'" type="text/javascript"></script>
+<object type="application/x-shockwave-flash" data="https://site.syspay.com/fp/fp.swf?org_id=xxxxxxxx&amp;session_id='.$systhreat.'" width="1" height="1" style="position: absolute; left: -999px; top: -999px;"><param name="movie" value="https://site.syspay.com/fp/fp.swf?org_id=xxxxxxxx&amp;session_id='.$systhreat.'" /><div></div></object>
+<iframe style="color:rgb(0,0,0); float: left; position: absolute; top: -999px; left: -999px; border: 0px;" src="https://site.syspay.com/tags?org_id=xxxxxxxx&amp;session_id='.$systhreat.'" height="100" widht="100"></iframe>
+<img src="https://site.syspay.com/fp/clear.png?org_id=xxxxxxxx&amp;session_id='.$systhreat.'&amp;m=2" alt="" style="position: absolute; left: -999px; top: -999px;" />';
 	}
 	
 	public function payment_fields() {
@@ -468,58 +468,7 @@ class ABA_Syspay_Gateway extends WC_Payment_Gateway {
                 'redirect'	=> get_permalink(get_option('woocommerce_checkout_page_id'))
 			);
 			}
-			// global $woocommerce;
-            // $order = wc_get_order( $order_id );
-			// if ($_POST['_sys-tok']!=""){
-		// $amount = (int)$order->get_total();
-		// $amount = $amount*100;
-        // $request_url = $this->base_url.'api/v2/merchant/token';
-        
-        // $json_headers = $this->generateHeaders($this->api_login, $this->api_passphrase);
-        
-        // $json_data = array (
-            // "flow" => "API",
-            // "interactive" => "0",
-			// "threatmetrix_session_id" => $this->merchant_id.'-'.$_COOKIE['woocommerce_cart_hash'],
-			// "payment_method" => array (
-						// "token_key" => $_POST['sys-tok']
-						// ),
-			// "payment" => array(
-						// "reference" => $order->get_id(),
-						// "amount" => $amount,
-						// "currency" => $order->get_currency(),
-						// "preauth" => true
-						// ),
-			// "payment_method_options" => array (
-						// "type" => "CREDITCARD",
-						// "three_ds" => "MUST"
-						// )
-        // );
-		// $args = array(
-					// 'method'      => 'POST',
-					// 'timeout'     => 45,
-					// 'headers'     => $json_headers,
-					// 'body'        => $json_data
-		// );
-		// $response = wp_remote_post( $request_url, $args);
-		// if ( is_wp_error( $response ) ) {
-			// $error_message = $response->get_error_message();
-			// wc_add_notice( "Something went wrong", 'error');
-			// exit;
-		// } else {
-			// wc_add_notice('Response:'.$_POST['sys-tok'],'error');
 			
-			// print_r( $response );
-			// exit;
-			//echo '</pre>';
-		// }
-			// }else 
-		// {
-			// wc_add_notice('We are currently not able to process the payment. No valid response from Syspay. Sorry for the inconvenience.', 'error');
-            // self::log('Payment failure: token not found or invalid for order '.$order_id, 'error');
-            // wp_redirect(get_permalink(get_option('woocommerce_checkout_page_id')));
-            // exit;
-		// }
 		}	
   }
 }

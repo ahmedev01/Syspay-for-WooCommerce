@@ -6,7 +6,7 @@
  *
  * @class 		ABA_Syspay_Transaction_Handler
  * @version		1.0.0
- * @author 		Ahmed Ben Ali, aqazi Studio
+ * @author 		Ahmed Benali
  */
 
     if ( ! defined( 'ABSPATH' ) ) {
@@ -69,26 +69,6 @@ class ABA_Syspay_Transaction_Handler {
 		
 		public function payment_scripts() {
  
-		// we need JavaScript to process a token only on cart/checkout pages, right?
-		// if ( ! is_checkout() && !is_wc_endpoint_url( 'order-pay' ) ) {
-			// return;
-		// }
-	 
-		// if our payment gateway is disabled, we do not have to enqueue JS too
-		// if ( 'no' === $this->enabled ) {
-			// return;
-		// }
-	 
-		// no reason to enqueue JavaScript if API keys are not set
-		// if ( empty( $this->api_login ) || empty( $this->merchant_id ) ) {
-			// return;
-		// }
-	 
-		// do not work with card detailes without SSL unless your website is in a test mode
-		// if ( ! $this->sandbox && ! is_ssl() ) {
-			// return;
-		// }
-	 
 		// let's suppose it is our payment processor JavaScript that allows to obtain a token
 		wp_enqueue_script( 'syspay_js', 'https://cdn.syspay.com/js/syspay.tokenizer-current.js' );
 	 

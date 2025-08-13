@@ -6,7 +6,7 @@
  *
  * @class 		ABA_Syspay_Transaction_Handler
  * @version		1.0.0
- * @author 		Ahmed Ben Ali, aqazi Studio
+ * @author 		Ahmed Benali
  */
 
     if ( ! defined( 'ABSPATH' ) ) {
@@ -30,23 +30,11 @@
 
 	add_filter( 'woocommerce_thankyou_order_received_text', 'syspay_decode_3ds' );
 	function syspay_decode_3ds($post_id){
-	/*$keys = array(
-    get_option( 'api_login' ) => get_option( 'api_passphrase' )
-    );*/
+
     $order = wc_get_order( $post_id );
     $merchant = $_GET['merchant'];
     $result   = $_GET['result'];
     $checksum = $_GET['checksum'];
-    
-    /*if (!isset($keys[$merchant])) {
-        die("Unknown merchant login");
-    }
-    
-    $shouldBe = sha1($result . $keys[$merchant]);
-    
-    if ($checksum !== $shouldBe) {
-        // URL is not genuine
-    }*/
     
     // $result is a base64-encoded json string
     $resultat = json_decode(base64_decode($result));

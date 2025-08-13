@@ -3,7 +3,7 @@
  * Syspay Gateway WooCommerce admin page
  *
  * @since 1.0.0
- * @author Ahmed Ben Ali, aqazi Studio
+ * @author Ahmed Benali
  */
 
     if ( ! defined( 'ABSPATH' ) ) {

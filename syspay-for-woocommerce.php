@@ -1,13 +1,11 @@
 <?php
 /**
 * Plugin Name:  Syspay for WooCommerce
-* Plugin URI:   https://aqazi.net/plugins/syspay-woocommerce-extension
+* Plugin URI:   https://ahmedev.com
 * Description:  Syspay WooCommerce extension adds the ability to use syspay payment system as a payment gateway in your  WooCommerce powered website.
 * Version:      v 1.0.0
-* Author: aqazi Studio
-* Author URI: https://aqazi.net/
-* Developer: Ahmed Ben Ali
-* Developer URI: https://aqazi.net/
+* Author: Ahmed Benali
+* Author URI: https://ahmedev.com
 * Text Domain: aba-woo-syspay
 * Domain Path: /languages
 *
@@ -58,7 +56,7 @@
     function aba_syspay_wc_plugin_links( $links ) {
         $plugin_links = array(
             '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=checkout&section=syspay' ) . '">' . __( 'Settings', 'aba-woo-syspay' ) . '</a>',
-            '<a href="https://aqazi.net/">' . __( 'Support', 'aba-woo-syspay' ) . '</a>',
+            '<a href="https://ahmedev.com/">' . __( 'Support', 'aba-woo-syspay' ) . '</a>',
         );
         return array_merge( $plugin_links, $links );
     }
