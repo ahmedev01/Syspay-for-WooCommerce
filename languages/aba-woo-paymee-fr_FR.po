@@ -1,0 +1,273 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: paymee-for-woocommerce\n"
+"POT-Creation-Date: 2018-10-09 11:17+0100\n"
+"PO-Revision-Date: 2018-10-09 11:18+0100\n"
+"Last-Translator: \n"
+"Language-Team: contact@aqazi.net\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/admin-wc-paymee-settings.php:14
+msgid "Select page"
+msgstr "Sélectionner la page"
+
+#: includes/admin-wc-paymee-settings.php:22
+msgid "Enable/Disable"
+msgstr "Activer/Désactiver"
+
+#: includes/admin-wc-paymee-settings.php:24
+msgid "Enable Paymee Gateway"
+msgstr "Activer la passerelle Paymee"
+
+#: includes/admin-wc-paymee-settings.php:28
+msgid "Title"
+msgstr "Titre"
+
+#: includes/admin-wc-paymee-settings.php:30
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+"Cela détermine le titre que les utilisateurs verront durant la commande."
+
+#: includes/admin-wc-paymee-settings.php:31
+msgid "Pay with Paymee"
+msgstr "Payez avec Paymee"
+
+#: includes/admin-wc-paymee-settings.php:35
+msgid "Description"
+msgstr "Description"
+
+#: includes/admin-wc-paymee-settings.php:38
+msgid "This controls the description which the user sees during checkout."
+msgstr ""
+"Ceci détermine la description que les utilisateurs verront durant le "
+"réglement."
+
+#: includes/admin-wc-paymee-settings.php:39
+msgid ""
+"Pay via Paymee; you will be redirected to Paymee to login and complete "
+"payment."
+msgstr ""
+"Payez via Paymee; vous serez redirigé vers Paymee pour vous connecter et "
+"terminer le paiement."
+
+#: includes/admin-wc-paymee-settings.php:49
+msgid "API Token"
+msgstr "Clé API"
+
+#: includes/admin-wc-paymee-settings.php:51
+msgid "Please enter your Paymee token."
+msgstr "Veuillez entrer votre clé API Paymee."
+
+#: includes/admin-wc-paymee-settings.php:55
+msgid "Vendor ID"
+msgstr "ID Vendeur"
+
+#: includes/admin-wc-paymee-settings.php:57
+msgid ""
+"Please enter your Paymee Vendor ID; this is needed in order to receive "
+"payment."
+msgstr ""
+"Veuillez entrer votre identifiant de vendeur Paymee; cela est nécessaire "
+"pour recevoir le paiement."
+
+#: includes/admin-wc-paymee-settings.php:61
+msgid "Cancel Page"
+msgstr "Page d'annulation"
+
+#: includes/admin-wc-paymee-settings.php:64
+msgid ""
+"Please enter the URL to the cancel payment page to show after a customer "
+"cancel payment;"
+msgstr ""
+"Veuillez entrer l'URL de la page d'annulation de paiement à afficher après "
+"qu'un client annule un paiement;"
+
+#: includes/admin-wc-paymee-settings.php:68
+msgid "Advanced options"
+msgstr "Options avancées"
+
+#: includes/admin-wc-paymee-settings.php:73
+msgid "Paymee sandbox"
+msgstr "Bac à sable Paymee"
+
+#: includes/admin-wc-paymee-settings.php:75
+msgid "Enable Paymee sandbox for testing."
+msgstr "Activer le bac à sable Paymee pour les tests."
+
+#: includes/admin-wc-paymee-settings.php:77
+msgid "Paymee sandbox can be used to test payments."
+msgstr "Le bac à sable Paymee peut être utilisé pour tester les paiements."
+
+#: includes/admin-wc-paymee-settings.php:80
+msgid "Debug log"
+msgstr "Journal de débogage"
+
+#: includes/admin-wc-paymee-settings.php:82
+msgid "Enable logging"
+msgstr "Activer la journalisation"
+
+#: includes/admin-wc-paymee-settings.php:84
+#, php-format
+msgid ""
+"Log Paymee events, such as API requests, inside %s Note: We recommend using "
+"this for debugging purposes only and deleting the logs when finished."
+msgstr ""
+"Consignez les événements Paymee, tels que les repuêtes API, à l'intérieur de "
+"%s. Remarque: nous vous recommandons de l'utiliser uniquement à des fins de "
+"débogage et de supprimer les journaux lorsque vous avez terminé."
+
+#: includes/class-aba-paymee-gateway.php:37
+msgid "Proceed to Paymee"
+msgstr "Passez à Paymee"
+
+#: includes/class-aba-paymee-gateway.php:38
+#: includes/class-aba-paymee-gateway.php:40
+msgid "Paymee"
+msgstr "Paymee"
+
+#: includes/class-aba-paymee-gateway.php:39
+msgid ""
+"Paymee Gateway redirects customers to Paymee to complete payment. You need "
+"to have a Paymee merchant account."
+msgstr ""
+"La passerelle Paymee redirige les clients vers Paymee pour effectuer le "
+"paiement. Vous devez avoir un compte marchand Paymee."
+
+#: includes/class-aba-paymee-gateway.php:62
+msgid " SANDBOX ENABLED. You can use sandbox testing accounts only."
+msgstr ""
+" BAC A SABLE ACTIVÉ. Vous pouvez utiliser des comptes de test uniquement."
+
+#: includes/class-aba-paymee-gateway.php:147
+msgid "Paymee Gateway setup incomplete"
+msgstr "La configuration de Paymee est incomplète"
+
+#: includes/class-aba-paymee-gateway.php:147
+msgid ""
+"Please make sure that the fields API key, Merchant ID and Cancel page are "
+"filled correctly."
+msgstr ""
+"Assurez-vous que les champs Clé API, Identifiant du vendeur et la page "
+"d'annulation sont correctement renseignés."
+
+#: includes/class-aba-paymee-gateway.php:156
+#: includes/class-aba-paymee-gateway.php:161
+msgid "Paymee Gateway disabled"
+msgstr "La passerelle Paymee a été désactivée"
+
+#: includes/class-aba-paymee-gateway.php:156
+msgid "Paymee does not support your store currency."
+msgstr "Paymee ne prend pas en charge la devise de votre boutique."
+
+#: includes/class-aba-paymee-gateway.php:161
+msgid ""
+"Paymee requires cURL php extension to run properly. Please make sure to "
+"enable it in your server"
+msgstr ""
+"Paymee nécessite l’extension php cURL pour fonctionner correctement. Assurez-"
+"vous de l'activer sur votre serveur"
+
+#: includes/class-aba-paymee-gateway.php:195
+msgid ""
+"If you like Paymee for WooCommerce, please consider <strong>assigning Paymee "
+"as your payment processor partner</strong>."
+msgstr ""
+"Si vous aimez Paymee pour WooCommerce, envisagez de <strong> désigner Paymee "
+"en tant que votre partenaire de paiement</strong>."
+
+#: includes/class-aba-paymee-transaction-handler.php:72
+#: includes/class-aba-paymee-transaction-handler.php:124
+msgid ""
+"We are currently experiencing problems trying to connect to Paymee. Sorry "
+"for the inconvenience."
+msgstr ""
+"Nous rencontrons actuellement des problèmes en essayant de se connecter à "
+"Paymee. Désolé pour le dérangement."
+
+#: includes/class-aba-paymee-transaction-handler.php:130
+msgid ""
+"We are currently not able to process the payment. No valid response from "
+"Paymee. Sorry for the inconvenience."
+msgstr ""
+"Nous ne sommes actuellement pas en mesure de traiter le paiement. Aucune "
+"réponse valide de Paymee. Désolé pour le dérangement."
+
+#: includes/class-aba-paymee-transaction-handler.php:148
+msgid "Pay Now"
+msgstr "Payer Maintenant"
+
+#: includes/class-aba-paymee-transaction-handler.php:203
+#: includes/class-aba-paymee-transaction-handler.php:207
+#, php-format
+msgid "Successful Payment. Transaction number # %s."
+msgstr "Paiement réussi. Numéro de transaction # %s."
+
+#: includes/class-aba-paymee-transaction-handler.php:212
+msgid "Payment failed somewhere."
+msgstr "Le paiement a échoué quelque part."
+
+#: paymee-for-woocommerce.php:60
+msgid "Settings"
+msgstr "Réglages"
+
+#: paymee-for-woocommerce.php:61
+msgid "Support"
+msgstr "Support"
+
+#: woocommerce/thankyou.php:30
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction. Please attempt your purchase again."
+msgstr ""
+"Malheureusement, votre commande ne peut pas être traitée car la banque / le "
+"marchand d'origine a refusé votre transaction. Veuillez tenter votre achat à "
+"nouveau."
+
+#: woocommerce/thankyou.php:33
+msgid "Pay"
+msgstr "Payer"
+
+#: woocommerce/thankyou.php:35
+msgid "My account"
+msgstr "Mon Compte"
+
+#: woocommerce/thankyou.php:41
+msgid ""
+"Thank you. this is Paymee thankyou page. Change it here /templates/thankyou."
+"php."
+msgstr ""
+"Merci. C'est la page de validation de paiement Paymee. Personnalisez la "
+"ici: /woocommerce/thankyou.php."
+
+#: woocommerce/thankyou.php:46
+msgid "Order number:"
+msgstr "Numéro de commande:"
+
+#: woocommerce/thankyou.php:51
+msgid "Date:"
+msgstr "Date:"
+
+#: woocommerce/thankyou.php:57
+msgid "Email:"
+msgstr "Email:"
+
+#: woocommerce/thankyou.php:63
+msgid "Total:"
+msgstr "Total:"
+
+#: woocommerce/thankyou.php:69
+msgid "Payment method:"
+msgstr "Mode de paiement:"
+
+#: woocommerce/thankyou.php:83
+msgid "Thank you. Your order has been received."
+msgstr "Je vous remercie. Votre commande a été reçue."
